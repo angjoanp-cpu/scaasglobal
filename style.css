@@ -564,3 +564,13 @@ a {
         padding: 25px 20px;
     }
 }
+
+footer a {
+    color: #c9a227;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
