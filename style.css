@@ -574,3 +574,33 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+    background-color: #ffffff;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+.linkedin-link {
+    color: #c9a227;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.linkedin-link:hover {
+    text-decoration: underline;
+}
+@media (max-width: 600px) {
+    .site-footer {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
