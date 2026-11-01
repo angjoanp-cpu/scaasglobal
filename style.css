@@ -181,3 +181,224 @@ strong { font-weight: 700; }
 .skip-link:focus {
     top: 12px;
 }
+
+/* =============================================
+   STOCKVELOCITY FOUNDING CLIENT PRICING
+   SCaaS Global | Navy & Metallic Gold
+============================================= */
+
+.sv-pricing-section {
+  --sv-navy: #192d47;
+  --sv-dark: #101e30;
+  --sv-gold: #cda754;
+  --sv-gold-light: #e0c27b;
+  --sv-white: #ffffff;
+  --sv-muted: #c4d1e2;
+
+  padding: 72px 20px;
+  background: var(--sv-dark);
+  color: var(--sv-white);
+  font-family: inherit;
+}
+
+.sv-pricing-section *,
+.sv-pricing-section *::before,
+.sv-pricing-section *::after {
+  box-sizing: border-box;
+}
+
+.sv-pricing-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sv-pricing-intro {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 36px;
+}
+
+.sv-eyebrow {
+  display: block;
+  color: var(--sv-gold-light);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+}
+
+.sv-pricing-intro h2 {
+  color: var(--sv-white);
+  font-size: clamp(26px, 4vw, 36px);
+  margin: 0 0 15px;
+}
+
+.sv-pricing-intro p {
+  color: var(--sv-muted);
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.sv-price-card {
+  max-width: 570px;
+  margin: 0 auto;
+  padding: 36px;
+  background: var(--sv-navy);
+  border: 1px solid #6e5b35;
+  border-radius: 12px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.16);
+}
+
+.sv-offer-label {
+  display: inline-block;
+  color: var(--sv-gold-light);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-bottom: 14px;
+}
+
+.sv-card-header h3 {
+  color: var(--sv-white);
+  font-size: 25px;
+  margin: 0 0 12px;
+}
+
+.sv-card-header p {
+  color: var(--sv-muted);
+  line-height: 1.7;
+  font-size: 14px;
+  margin: 0;
+}
+
+.sv-price-block {
+  margin: 28px 0;
+  padding: 25px 0;
+  border-top: 1px solid #3a4b60;
+  border-bottom: 1px solid #3a4b60;
+}
+
+.sv-price {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.sv-amount {
+  color: var(--sv-white);
+  font-size: clamp(38px, 6vw, 48px);
+  font-weight: 750;
+  line-height: 1.1;
+}
+
+.sv-price-term {
+  color: var(--sv-muted);
+  font-size: 14px;
+}
+
+.sv-price-block p {
+  color: var(--sv-muted);
+  font-size: 13px;
+  margin: 14px 0 0;
+}
+
+.sv-inclusions h4 {
+  color: var(--sv-white);
+  font-size: 16px;
+  margin: 0 0 20px;
+}
+
+.sv-inclusions ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 15px;
+}
+
+.sv-inclusions li {
+  position: relative;
+  padding-left: 27px;
+  color: #ecf1f7;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.sv-inclusions li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--sv-gold-light);
+  font-weight: 700;
+}
+
+.sv-pricing-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: 30px;
+  padding: 16px 20px;
+  background: var(--sv-gold);
+  color: #15243a;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  transition: background 0.2s ease,
+              transform 0.2s ease;
+}
+
+.sv-pricing-btn:hover {
+  background: var(--sv-gold-light);
+  transform: translateY(-2px);
+}
+
+.sv-pricing-btn:focus-visible {
+  outline: 3px solid var(--sv-white);
+  outline-offset: 4px;
+}
+
+.sv-pricing-note {
+  color: #aabbd0;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+  margin: 20px 0 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .sv-pricing-section {
+    padding: 48px 16px;
+  }
+
+  .sv-price-card {
+    padding: 25px 20px;
+  }
+
+  .sv-card-header h3 {
+    font-size: 22px;
+  }
+
+  .sv-pricing-btn {
+    font-size: 13px;
+  }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .sv-pricing-btn {
+    transition: none;
+  }
+
+  .sv-pricing-btn:hover {
+    transform: none;
+  }
+}
+
